@@ -22,15 +22,15 @@ h1, td {
 			<table>
 				<tr>
 					<td><label for="id">아이디(이메일)</label></td>
-					<td><input type="text" name="userId"></td>
+					<td><input type="text" name="userId" required></td>
 				</tr>
 				<tr>
 					<td><label for="password">비밀번호</label></td>
-					<td><input type="password" name="userPw"></td>
+					<td><input type="password" name="userPw" required></td>
 				</tr>
 				<tr>
 					<td><label for="name">이름</label></td>
-					<td><input type="text" name="userName"></td>
+					<td><input type="text" name="userName" required></td>
 				</tr>
 				<tr>
 					<td><label for="userImg">사진</label></td>

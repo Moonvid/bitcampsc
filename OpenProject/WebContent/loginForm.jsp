@@ -23,11 +23,14 @@ h1, td {
 			<table>
 				<tr>
 					<td><label for="id">아이디(이메일)</label></td>
-					<td><input type="text" name="inputId"></td>
+					<td><input type="text" name="inputId" required></td>
 				</tr>
 				<tr>
 					<td><label for="password">비밀번호</label></td>
-					<td><input type="password" name="inputPw"></td>
+					<td><input type="password" name="inputPw" required></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="checkbox" id="chk"><label for="chk">Remember me</label></td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="submit" value="로그인"></td>

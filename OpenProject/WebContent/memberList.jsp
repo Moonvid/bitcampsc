@@ -64,6 +64,7 @@ h1, td {
 			<tr>
 				<td><label for="id">아이디(이메일)</label></td>
 				<td><label for="name">이름</label></td>
+				<td><label>관리</label></td>
 			</tr>
 			<%
 			for(int i=0;i<memberList.size();i++){
@@ -71,9 +72,11 @@ h1, td {
 			<tr>
 				<td><%=memberList.get(i).getId() %></td>
 				<td><%=memberList.get(i).getName() %></td>
+				<td><input type="button" value="수정"><input type="button" value="삭제"></td>
 			</tr>
-			<%}%>
-		<%}%>
+			<%
+			}
+		}%>
 		</table>
 	</div>
 
