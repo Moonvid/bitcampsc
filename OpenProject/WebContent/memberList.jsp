@@ -62,6 +62,7 @@ h1, td {
 		<hr>
 		<table>
 			<tr>
+				<td><label for="index">Index</label></td>
 				<td><label for="id">아이디(이메일)</label></td>
 				<td><label for="name">이름</label></td>
 				<td><label>관리</label></td>
@@ -70,9 +71,10 @@ h1, td {
 			for(int i=0;i<memberList.size();i++){
 			%>	
 			<tr>
+				<td><%=i %></td>
 				<td><%=memberList.get(i).getId() %></td>
 				<td><%=memberList.get(i).getName() %></td>
-				<td><input type="button" value="수정"><input type="button" value="삭제"></td>
+				<td><a href="modifyMember.jsp?memberIdx=<%=i%>">수정</a> / <a href="removeMember.jsp?memberIdx=<%=i%>">삭제</a></td>
 			</tr>
 			<%
 			}
