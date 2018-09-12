@@ -1,0 +1,30 @@
+@charset "utf-8";
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		
+		#gnb{
+            overflow: hidden;
+            border-top: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+        }
+        
+        h1.title{
+        	padding: 10px;
+        }
+        /* ui의 자손인 li 선택 */
+        #gnb>li{
+            list-style: none;
+            float: left;
+            padding: 10px;
+        }
+        
+        #contents{
+        	padding: 15px;
+        }
+        
+        a:link{
+            text-decoration: none;
+        }
